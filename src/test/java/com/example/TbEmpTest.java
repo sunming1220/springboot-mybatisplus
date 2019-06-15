@@ -32,13 +32,13 @@ public class TbEmpTest {
     }
 
     /**
-     * java读取python文件
+     * java执行python文件
      * @param args
      */
     public static void main(String[] args) {
         try {
             System.out.println("start");
-            String[] strings = new String[]{"python", "D:/PYWorkspace/demo/Demo.py"};
+            String[] strings = new String[]{"python", "D:/demo.py"};
             Process pr = Runtime.getRuntime().exec(strings);
             BufferedReader br = new BufferedReader(new InputStreamReader(pr.getInputStream()));
             String line;
