@@ -77,6 +77,17 @@
 			<artifactId>swagger-bootstrap-ui</artifactId>
 			<version>1.9.3</version>
 		</dependency>
+		<!--ssh-->
+		<dependency>
+			<groupId>ch.ethz.ganymed</groupId>
+			<artifactId>ganymed-ssh2</artifactId>
+			<version>262</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
