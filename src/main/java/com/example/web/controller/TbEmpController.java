@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.web.controller;
 
 import com.example.dto.TbEmp;
 import com.example.response.Response;
