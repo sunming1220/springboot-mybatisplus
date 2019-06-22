@@ -1,6 +1,6 @@
 package com.example.common.security;
 
-import com.emdata.meteorology.common.utils.PasswordEncoder;
+import com.example.common.utils.PasswordEncoder;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;

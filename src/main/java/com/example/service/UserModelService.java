@@ -7,7 +7,7 @@ import com.example.web.vo.UserVO;
 /**
  * Created by sunming on 2019/6/20.
  */
-public interface UserService {
+public interface UserModelService {
 
     /**
      * 新增用户

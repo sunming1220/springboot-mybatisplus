@@ -7,7 +7,7 @@ import com.example.dao.UserMapper;
 import com.example.dao.column.Column;
 import com.example.dao.entity.UserDO;
 import com.example.response.CommonResultData;
-import com.example.service.UserService;
+import com.example.service.UserModelService;
 import com.example.web.vo.UserVO;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by sunming on 2019/6/20.
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class UserModelServiceImpl implements UserModelService {
 
     @Autowired
     private UserMapper userMapper;

@@ -5,7 +5,7 @@ import com.example.common.utils.PasswordUtils;
 import com.example.common.utils.SecurityUtils;
 import com.example.common.config.AuthErrorEnum;
 import com.example.response.CommonResultData;
-import com.example.service.UserService;
+import com.example.service.UserModelService;
 import com.example.web.vo.LoginBean;
 import com.example.web.vo.UserVO;
 import io.swagger.annotations.Api;
@@ -29,7 +29,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("api/user")
 public class LoginController {
     @Autowired
-    private UserService userService;
+    private UserModelService userService;
 
     @Autowired
     private AuthenticationManager authenticationManager;
