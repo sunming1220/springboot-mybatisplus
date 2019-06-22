@@ -1,7 +1,7 @@
 package com.example;
 
 import com.example.dto.TbEmp;
-import com.example.dao.TbEmpMapper;
+import com.example.dao.mapper.TbEmpMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

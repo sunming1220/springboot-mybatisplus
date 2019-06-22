@@ -3,7 +3,7 @@ package com.example.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.common.Guid;
 import com.example.common.utils.PasswordUtils;
-import com.example.dao.UserMapper;
+import com.example.dao.mapper.UserMapper;
 import com.example.dao.column.Column;
 import com.example.dao.entity.UserDO;
 import com.example.response.CommonResultData;
@@ -29,7 +29,7 @@ public class UserModelServiceImpl implements UserModelService {
     @Override
     public CommonResultData addUser(UserVO userVo) {
         UserDO userDo = new UserDO();
-        BeanUtils.copyProperties(userVo,userDo);
+        BeanUtils.copyProperties(userVo, userDo);
         String uuid = StringUtils.isBlank(userDo.getUuid()) ? Guid.newGUID() : userDo.getUuid();
         userDo.setUuid(uuid);
         //给密码加密
@@ -45,10 +45,13 @@ public class UserModelServiceImpl implements UserModelService {
     @Override
     public UserVO findByUsername(String username) {
         QueryWrapper<UserDO> qw = new QueryWrapper<>();
-        qw.eq(true, Column.User.USERNAME,username);
+        qw.eq(true, Column.User.USERNAME, username);
         UserDO userDo = userMapper.selectOne(qw);
         UserVO userVo = new UserVO();
-        BeanUtils.copyProperties(userDo,userVo);
+        if (userDo != null) {
+
+            BeanUtils.copyProperties(userDo, userVo);
+        }
         return userVo;
     }
 }

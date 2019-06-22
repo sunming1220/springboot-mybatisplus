@@ -1,4 +1,4 @@
-package com.example.dao;
+package com.example.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.dto.TbEmp;

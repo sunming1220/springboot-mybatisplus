@@ -1,9 +1,9 @@
 package com.example.web.controller;
 
+import com.example.common.config.AuthErrorEnum;
 import com.example.common.security.JwtAuthenticatioToken;
 import com.example.common.utils.PasswordUtils;
 import com.example.common.utils.SecurityUtils;
-import com.example.common.config.AuthErrorEnum;
 import com.example.response.CommonResultData;
 import com.example.service.UserModelService;
 import com.example.web.vo.LoginBean;
