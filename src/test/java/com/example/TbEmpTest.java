@@ -30,28 +30,21 @@ public class TbEmpTest {
         tbEmps.forEach(System.out::println);
     }
 
-    /**
-     * java执行python文件
-     * @param args
-     */
-    public static void main(String[] args) {
-        try {
-            System.out.println("start");
-            String[] strings = new String[]{"python", "D:/demo.py"};
-            Process pr = Runtime.getRuntime().exec(strings);
-            BufferedReader br = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-            String line;
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
-            br.close();
-            pr.waitFor();
-            System.out.println("end");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    @Test
+    public void ave() {
+//        List<Double> list = new ArrayList<>();
+//        list.add(1.2);
+//        list.add(2.0);
+//        list.add(3.0);
+//        OptionalDouble average = list.stream().mapToDouble(x -> x).average();
+//        double asDouble = average.getAsDouble();
+//        asDouble = 999.9;
+//        int i = new Double(asDouble).intValue();
+//        i = i / 50;
+//        System.out.println(i);
 
+        System.out.println(1 - 2);
+        System.out.println(Math.abs(1 - 2));
     }
-
 
 }
